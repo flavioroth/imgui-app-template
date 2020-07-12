@@ -48,7 +48,8 @@ add_subdirectory(imgui)
 set(SRCS
 	utils/RollingBuffer.hpp
 	main.cpp
-	)
+	utils/Window.cpp
+	utils/Window.hpp)
 
 add_executable(app ${SRCS})
 target_compile_definitions(app PUBLIC APP_NAME="${CMAKE_PROJECT_NAME}")
